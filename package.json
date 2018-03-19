@@ -1,0 +1,20 @@
+{
+  "name": "Instagram2.0",
+  "version": "1.0.0",
+  "description": "**Instagram 2.0**  is my own verision of Instagram. A web application that I have built and design independently. Inspired by Pinterest's new productivity feature, I implemented a re-order feature on each users account that will allow them greater control over their content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twilsonpierce/Instagram2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twilsonpierce/Instagram2.0/issues"
+  },
+  "homepage": "https://github.com/twilsonpierce/Instagram2.0#readme"
+}
