@@ -2,7 +2,7 @@
   "development": {
     "username": "tionnawilsonpierce",
     "password": null,
-    "database": "instagram2.0",
+    "database": "instagram",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
