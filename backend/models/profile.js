@@ -4,10 +4,11 @@ module.exports = (sequelize, DataTypes) => {
     follows: DataTypes.NUMBER,
     followers: DataTypes.NUMBER,
     image: DataTypes.STRING,
-    likes: DataTypes.NUMBER
+    likes: DataTypes.NUMBER, 
+    description: DataTypes.STRING
   }, {});
   Profile.associate = function(models) {
-    // associations can be defined here
+    Profile.hasOne(User)
   };
   return Profile;
 };

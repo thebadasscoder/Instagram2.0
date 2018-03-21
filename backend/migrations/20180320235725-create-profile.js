@@ -20,6 +20,9 @@ module.exports = {
       likes: {
         type: Sequelize.NUMBER
       },
+       description: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
