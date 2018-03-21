@@ -14,7 +14,7 @@ module.exports = {
       followers: {
         type: Sequelize.NUMBER
       },
-      image: {
+      user_photo: {
         type: Sequelize.STRING
       },
       likes: {
@@ -22,6 +22,9 @@ module.exports = {
       },
        description: {
         type: Sequelize.STRING
+      },
+      images:{
+        type: Sequelize.ARRAY
       },
       createdAt: {
         allowNull: false,
