@@ -4,7 +4,7 @@ import LiveReloadPlugin from 'webpack-livereload-plugin';
 module.exports = {
   entry: ["./frontend/app.jsx"],
   output: {
-    path: __dirname + "/frontend/bundle",
+    path: __dirname + "/frontend/public/bundle",
     filename: "bundle.js",
     devtoolModuleFilenameTemplate: '[resourcePath]',
     devtoolFallbackModuleFilenameTemplate: '[resourcePath]?[hash]'

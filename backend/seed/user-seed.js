@@ -6,14 +6,14 @@ let userArr = [
 
 
 {
-    email: 'jaydensmith@gmail.com',
+    email_address: 'jaydensmith@gmail.com',
     password: 'lovemusicx3',
     username: 'jdsmith'
   },
 
 
 {
-    email: 'lovethyself@yahoo.com',
+    email_address: 'lovethyself@yahoo.com',
     password:'livelearngrow',
     username:'lovethyselfguru'
 

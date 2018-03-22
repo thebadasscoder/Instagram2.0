@@ -1,12 +1,12 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var User = sequelize.define('User', {
-    email: DataTypes.STRING,
+    email_address: DataTypes.STRING,
     password: DataTypes.STRING,
     username: DataTypes.STRING
   }, {});
   User.associate = function(models) {
-    User.belongsTo(Profile)
+    User.hasMany(models.Post);
   };
   return User;
 };
