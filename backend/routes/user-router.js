@@ -3,10 +3,9 @@ const user = require('../models').User;
 const path = require('path');
 
 
+//** This will handle any routes going to localhost:3000/api/users
 
-//This will handle any routes going to localhost:8080/api/users/* 
-
-//Get All Users Here 
+// Get All Users Here 
 
 const allUsers = (req,res)=>{
 	user.findAll()

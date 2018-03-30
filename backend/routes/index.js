@@ -1,20 +1,14 @@
-var express = require('express');
-var app = express()
-var router = express.Router();
-var path = require('path');
 
-//THIS IS WHERE THE ROUTES WILL GO TO
+const express = require('express');
+const app = express();
+const router = express.Router();
+const path = require('path');
 
+//THIS IS WHERE THE ROUTES WILL GO 
 app.use('/api', router);
 
-
 //ROUTES 
-router.get('/users', (req,res)=>{
-	res.sendFile(path.join(__dirname, './user-router'));
-});
-
-router.get('/posts', ((req,res)=>{
-	res.sendFile(path.join(__dirname, './post-router'));
-}));
+router.use('/users', require('./user-router'))
+router.use('/posts', require('./post-router'))
 
 module.exports = router;

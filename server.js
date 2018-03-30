@@ -1,11 +1,13 @@
 'use strict';
 
 var express = require('express');
-var app = express()
+var app = express();
 var bodyparser = require('body-parser');
 var path = require('path');
 var db = require('./backend/models');
 var routes = require('./backend/routes');
+// var postRouter = require('./backend/routes/post-router.js');
+// var userRouter = require('./backend/routes/user-router.js');
 var cookieParser   = require('cookie-parser');
 
 
@@ -30,6 +32,7 @@ app.use(cookieParser());
 
 //ROUTES 
 app.use('/api', routes);
+// app.use('/api/users', userRouter);
 
 
 app.get('/*', function (req, res) {
@@ -39,7 +42,7 @@ app.get('/*', function (req, res) {
 
 
 db.sequelize.sync().then(function () {
-  app.listen(8080, () => console.log('Server running on Port 8080'));
+  app.listen(3000, () => console.log('Server running on Port 3000'));
 });
 
 module.exports = app;

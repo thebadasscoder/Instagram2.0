@@ -1,6 +1,5 @@
 const postRouter = require('express').Router();
 const post = require('../models').Post;
-// const formidable = require('formidable');
 const path = require('path');
 
 
@@ -17,19 +16,6 @@ const allPosts = (req,res)=>{
 		res.sendStatus(500);
 	})
 }
-
-
-// // //SINGLE PROFILE BY ID 
-
-// // const singleProfile = (req,res)=>{
-// // 	profile.findById(req.params.id)
-// // 	.then((data)=>{
-// // 		res.send(data)
-// // 	})
-// // 	.catch((error)=>{
-// // 		res.sendStatus(500);
-// // 	})
-// // }
 
 postRouter.route('/')
 	.get(allPosts)
