@@ -6,8 +6,6 @@ var bodyparser = require('body-parser');
 var path = require('path');
 var db = require('./backend/models');
 var routes = require('./backend/routes');
-// var postRouter = require('./backend/routes/post-router.js');
-// var userRouter = require('./backend/routes/user-router.js');
 var cookieParser   = require('cookie-parser');
 
 
@@ -32,7 +30,6 @@ app.use(cookieParser());
 
 //ROUTES 
 app.use('/api', routes);
-// app.use('/api/users', userRouter);
 
 
 app.get('/*', function (req, res) {
